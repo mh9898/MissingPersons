@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		711D09D01D0446E40032F62B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711D09CF1D0446E40032F62B /* Person.swift */; };
+		711D09D21D0448490032F62B /* FaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711D09D11D0448490032F62B /* FaceService.swift */; };
 		71630D751D0073190077A47F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71630D741D0073190077A47F /* AppDelegate.swift */; };
 		71630D771D0073190077A47F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71630D761D0073190077A47F /* ViewController.swift */; };
 		71630D7A1D0073190077A47F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71630D781D0073190077A47F /* Main.storyboard */; };
 		71630D7C1D0073190077A47F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71630D7B1D0073190077A47F /* Assets.xcassets */; };
 		71630D7F1D0073190077A47F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71630D7D1D0073190077A47F /* LaunchScreen.storyboard */; };
+		71630D891D007B0D0077A47F /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71630D881D007B0D0077A47F /* PersonCell.swift */; };
+		7E33BCA06467D6C4082E20CB /* Pods_MissingPerson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A64BC1615297B9BBC2327F5 /* Pods_MissingPerson.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		711D09CC1D0440890032F62B /* MissingPerson-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MissingPerson-Bridging-Header.h"; sourceTree = "<group>"; };
+		711D09CF1D0446E40032F62B /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		711D09D11D0448490032F62B /* FaceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceService.swift; sourceTree = "<group>"; };
 		71630D711D0073190077A47F /* MissingPerson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MissingPerson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71630D741D0073190077A47F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71630D761D0073190077A47F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,10 @@
 		71630D7B1D0073190077A47F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71630D7E1D0073190077A47F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71630D801D0073190077A47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71630D881D007B0D0077A47F /* PersonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonCell.swift; path = ../PersonCell.swift; sourceTree = "<group>"; };
+		76F16CCB30FE6C706483558C /* Pods-MissingPerson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MissingPerson.release.xcconfig"; path = "Pods/Target Support Files/Pods-MissingPerson/Pods-MissingPerson.release.xcconfig"; sourceTree = "<group>"; };
+		8A64BC1615297B9BBC2327F5 /* Pods_MissingPerson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MissingPerson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8E815726F7969C7EDE75FDD /* Pods-MissingPerson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MissingPerson.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MissingPerson/Pods-MissingPerson.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E33BCA06467D6C4082E20CB /* Pods_MissingPerson.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05BF4A56283B492CF930B9DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A64BC1615297B9BBC2327F5 /* Pods_MissingPerson.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		71630D681D0073190077A47F = {
 			isa = PBXGroup;
 			children = (
 				71630D731D0073190077A47F /* MissingPerson */,
 				71630D721D0073190077A47F /* Products */,
+				E855FF94C5837C7B1E2E7F0A /* Pods */,
+				05BF4A56283B492CF930B9DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +78,25 @@
 			children = (
 				71630D741D0073190077A47F /* AppDelegate.swift */,
 				71630D761D0073190077A47F /* ViewController.swift */,
+				71630D881D007B0D0077A47F /* PersonCell.swift */,
 				71630D781D0073190077A47F /* Main.storyboard */,
 				71630D7B1D0073190077A47F /* Assets.xcassets */,
 				71630D7D1D0073190077A47F /* LaunchScreen.storyboard */,
 				71630D801D0073190077A47F /* Info.plist */,
+				711D09CC1D0440890032F62B /* MissingPerson-Bridging-Header.h */,
+				711D09CF1D0446E40032F62B /* Person.swift */,
+				711D09D11D0448490032F62B /* FaceService.swift */,
 			);
 			path = MissingPerson;
+			sourceTree = "<group>";
+		};
+		E855FF94C5837C7B1E2E7F0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8E815726F7969C7EDE75FDD /* Pods-MissingPerson.debug.xcconfig */,
+				76F16CCB30FE6C706483558C /* Pods-MissingPerson.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71630D831D0073190077A47F /* Build configuration list for PBXNativeTarget "MissingPerson" */;
 			buildPhases = (
+				DF93DDDFE86B67D12159325A /* [CP] Check Pods Manifest.lock */,
 				71630D6D1D0073190077A47F /* Sources */,
 				71630D6E1D0073190077A47F /* Frameworks */,
 				71630D6F1D0073190077A47F /* Resources */,
+				A95F7B85082E42F7CC3FC842 /* [CP] Embed Pods Frameworks */,
+				9713D7C6B84FEE4076611500 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,12 +168,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9713D7C6B84FEE4076611500 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MissingPerson/Pods-MissingPerson-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A95F7B85082E42F7CC3FC842 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MissingPerson/Pods-MissingPerson-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF93DDDFE86B67D12159325A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		71630D6D1D0073190077A47F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				711D09D21D0448490032F62B /* FaceService.swift in Sources */,
+				71630D891D007B0D0077A47F /* PersonCell.swift in Sources */,
 				71630D771D0073190077A47F /* ViewController.swift in Sources */,
+				711D09D01D0446E40032F62B /* Person.swift in Sources */,
 				71630D751D0073190077A47F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,23 +336,30 @@
 		};
 		71630D841D0073190077A47F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8E815726F7969C7EDE75FDD /* Pods-MissingPerson.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MissingPerson/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mh.MissingPerson;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MissingPerson/MissingPerson-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		71630D851D0073190077A47F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76F16CCB30FE6C706483558C /* Pods-MissingPerson.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MissingPerson/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mh.MissingPerson;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MissingPerson/MissingPerson-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -286,6 +382,7 @@
 				71630D851D0073190077A47F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
