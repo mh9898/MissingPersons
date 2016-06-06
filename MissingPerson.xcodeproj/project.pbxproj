@@ -55,6 +55,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		711D09F31D05B5740032F62B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				71630D761D0073190077A47F /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		711D09F41D05B5940032F62B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71630D781D0073190077A47F /* Main.storyboard */,
+				71630D7D1D0073190077A47F /* LaunchScreen.storyboard */,
+				71630D881D007B0D0077A47F /* PersonCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		711D09F51D05B5B30032F62B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				711D09D11D0448490032F62B /* FaceService.swift */,
+				711D09CF1D0446E40032F62B /* Person.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		71630D681D0073190077A47F = {
 			isa = PBXGroup;
 			children = (
@@ -77,15 +104,12 @@
 			isa = PBXGroup;
 			children = (
 				71630D741D0073190077A47F /* AppDelegate.swift */,
-				71630D761D0073190077A47F /* ViewController.swift */,
-				71630D881D007B0D0077A47F /* PersonCell.swift */,
-				71630D781D0073190077A47F /* Main.storyboard */,
+				711D09F31D05B5740032F62B /* Controller */,
+				711D09F41D05B5940032F62B /* View */,
 				71630D7B1D0073190077A47F /* Assets.xcassets */,
-				71630D7D1D0073190077A47F /* LaunchScreen.storyboard */,
 				71630D801D0073190077A47F /* Info.plist */,
 				711D09CC1D0440890032F62B /* MissingPerson-Bridging-Header.h */,
-				711D09CF1D0446E40032F62B /* Person.swift */,
-				711D09D11D0448490032F62B /* FaceService.swift */,
+				711D09F51D05B5B30032F62B /* Model */,
 			);
 			path = MissingPerson;
 			sourceTree = "<group>";

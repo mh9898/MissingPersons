@@ -14,5 +14,5 @@ class FaceSerivce {
     static let instance = FaceSerivce()
     
     let client = MPOFaceServiceClient(subscriptionKey: "737e22377e584abe9257bdfebb3ee001")
-    
+        
 }

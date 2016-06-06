@@ -13,12 +13,19 @@ class PersonCell: UICollectionViewCell {
     
     @IBOutlet weak var personImage: UIImageView!
     
+    var currentFaceId : String?
     
-    func configCell(imageUrl: String){
+    var person: Person!
+    
+    var boolCurrentImage = false
+    
+    
+    func configCell(person: Person){
         
 //        downloadImage(NSURL(string: imageUrl)!)
+        self.person = person
         
-        if let url = NSURL(string: imageUrl){
+        if let url = NSURL(string: "\(baseUrl)\(person.personImageUrl!)"){
             downloadImage(url)
         }
         
@@ -41,13 +48,32 @@ class PersonCell: UICollectionViewCell {
             dispatch_async(dispatch_get_main_queue()) { () -> Void in
                 guard let data = data where error == nil else { return }
                 self.personImage.image = UIImage(data: data)
+                
+                self.person.personImage = self.personImage.image
             }
             
         }
     }
     
+    func setSelected(){
+
+        print(person.faceId)
+        personImage.layer.borderWidth = 2.0
+        personImage.layer.borderColor = UIColor.yellowColor().CGColor
+        self.person.downloadFaceId()
+ 
+    }
+    
+    func notSelected(){
+        
+        print(person.faceId)
+        personImage.layer.borderWidth = 0.0
+                
+    }
+
     
     
-   }
+}
+
 
 
